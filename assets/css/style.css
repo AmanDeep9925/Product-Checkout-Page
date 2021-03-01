@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font: "Montserrat", sans-serif;
+
+    --grey0: #f2f2f2;
+    --orange: rgba(242, 153, 74, 1);
+
+    --grey1: rgba(51, 51, 51, 1);
+    --grey2: rgba(130, 130, 130, 1);
+    --grey3: rgba(78, 81, 80, 1);
+    --grey4: rgba(224, 224, 224, 1);
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.5rem;
+
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+}
+
+body {
+    font-family: var(--font);
+}
+
+.panel {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--space-sm);
+}
+
+/* * Heading */
+
+.heading {
+    padding: 5px 0;
+    margin: var(--space-md) 0 var(--space-md) 0;
+    font-weight: 400;
+    font-size: var(--text-xs);
+}
+
+/* * Main wrapper */
+
+.wrapper {
+    display: block;
+}
+
+/* * Bill container */
+
+.bill--container {
+    padding: var(--space-md);
+    background-color: var(--grey0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -5px var(--grey1);
+    margin-bottom: var(--space-lg);
+}
+
+.item--card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-lg);
+}
+
+.item--image {
+    width: 40%;
+}
+
+.item--image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item--content {
+    padding: var(--space-xm);
+    max-width: 50%;
+    align-self: flex-start;
+}
+
+.item--name {
+    font-size: var(--text-md);
+    padding: var(--space-sm) 0;
+}
+
+.item--price {
+    font-size: var(--text-sm);
+    padding: var(--space-xm) 0;
+    font-weight: bold;
+}
+
+.discount--price {
+    color: var(--orange);
+    padding-right: var(--space-sm);
+}
+
+.actual--price {
+    color: var(--grey3);
+}
+
+.item--quantity {
+    padding: var(--space-md) 0;
+    border: 1px solid var(--grey2);
+    border-radius: 8px;
+    width: inherit;
+    margin: var(--space-sm) 0;
+    text-align: center;
+}
+
+.item--quantity span {
+    padding: 0 var(--space-sm);
+}
+
+.value--btn {
+    background-color: var(--grey4);
+    color: var(--grey2);
+    border-radius: 5px;
+}
+
+.number--input {
+    width: 30%;
+    outline: none;
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-size: var(--text-sm);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.invoice--container {
+    padding: 10px 10px;
+}
+
+.charges {
+    padding: 20px 0px;
+    position: relative;
+    border-top: 2px solid var(--grey2);
+    font-weight: 700;
+}
+
+.left {
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+
+.right {
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+
