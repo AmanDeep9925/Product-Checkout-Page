@@ -47,8 +47,13 @@
                                 <span class="value--btn" id="decrease">
                                     <i class="fas fa-minus"></i>
                                 </span>
-                                <span >
-                                    <input type="number" id="items" value="0" class="number--input"/>
+                                <span>
+                                    <input
+                                        type="number"
+                                        id="items"
+                                        value="0"
+                                        class="number--input"
+                                    />
                                 </span>
                                 <span class="value--btn" id="increase">
                                     <i class="fas fa-plus"></i>
@@ -74,8 +79,13 @@
                                 <span class="value--btn" id="decrease">
                                     <i class="fas fa-minus"></i>
                                 </span>
-                                <span >
-                                    <input type="number" id="items" value="0" class="number--input"/>
+                                <span>
+                                    <input
+                                        type="number"
+                                        id="items"
+                                        value="0"
+                                        class="number--input"
+                                    />
                                 </span>
                                 <span class="value--btn" id="increase">
                                     <i class="fas fa-plus"></i>
@@ -98,129 +108,135 @@
 
                 <!-- * contact form  -->
 
-                <div class="form--container">
-                    <p class="form--header">Contact Information</p>
+                <form class="form--wrapper">
+                    <div class="form--container contact--form">
+                        <p class="form--header contact--header">
+                            Contact Information
+                        </p>
 
-                    <div class="form--group">
-                        <label for="email">Email</label>
-                        <div class="input__container">
-                            <i class="fas fa-envelope"></i>
+                        <div class="form--group">
+                            <label for="email">Email</label>
+                            <div class="input__container">
+                                <i class="fas fa-envelope icon"></i>
+                                <input
+                                    type="text"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Enter your email..."
+                                    class="form--input"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form--group">
+                            <label for="phone">Phone</label>
+                            <div class="input__container">
+                                <i class="fas fa-phone-alt icon"></i>
+                                <input
+                                    type="text"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder="Enter your phone..."
+                                    class="form--input"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form--container">
+                        <!-- * Shipping address form -->
+
+                        <p class="form--header shipping--header">
+                            Shipping Address
+                        </p>
+
+                        <div class="form--group">
+                            <label for="fullname">Full name</label>
+                            <div class="input__container">
+                                <i class="far fa-user icon"></i>
+                                <input
+                                    type="text"
+                                    name="fullname"
+                                    id="fullname"
+                                    placeholder="Rodney Cotton"
+                                    class="form--input"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form--group">
+                            <label for="address">Address</label>
+                            <div class="input__container">
+                                <i class="fas fa-home icon"></i>
+                                <input
+                                    type="text"
+                                    name="address"
+                                    id="address"
+                                    placeholder="Your Address"
+                                    class="form--input"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form--group">
+                            <label for="city">Your city</label>
+                            <div class="input__container">
+                                <i class="fas fa-city icon"></i>
+                                <input
+                                    type="text"
+                                    name="city"
+                                    id="city"
+                                    placeholder="Your city"
+                                    class="form--input"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form--group">
+                            <label for="country">Country</label>
+                            <div class="input__container">
+                                <i class="fas fa-globe-americas icon"></i>
+                                <select name="country" id="country">
+                                    <option value="Your country">
+                                        Your Country
+                                    </option>
+                                    <option value="india">INDIA</option>
+                                    <option value="usa">USA</option>
+                                    <option value="uk">U.K.</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form--group">
+                            <label for="postalcode">Postal Code</label>
+                            <div class="input__container">
+                                <i class="far fa-map icon"></i>
+                                <input
+                                    type="text"
+                                    name="postalcode"
+                                    id="postalcode"
+                                    placeholder="Your postal code"
+                                    class="form--input"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="save">
                             <input
-                                type="text"
-                                name="email"
-                                id="email"
-                                placeholder="Enter your email..."
-                                class="form--input"
+                                type="checkbox"
+                                name="saveforlater"
+                                id="saveforlater"
                             />
+                            <label for="saveforlater"
+                                >Save this information for next time.</label
+                            >
+                        </div>
+
+                        <div class="form--group btn--container">
+                            <button type="submit" class="btn">Continue</button>
                         </div>
                     </div>
-
-                    <div class="form--group">
-                        <label for="phone">Phone</label>
-                        <div class="input__container">
-                            <i class="fas fa-phone-alt"></i>
-                            <input
-                                type="text"
-                                name="phone"
-                                id="phone"
-                                placeholder="Enter your phone..."
-                                class="form--input"
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <!-- * Shipping address form -->
-
-                <div class="form--container">
-                    <p class="form--header">Shipping Address</p>
-
-                    <div class="form--group">
-                        <label for="fullname">Full name</label>
-                        <div class="input__container">
-                            <i class="far fa-user"></i>
-                            <input
-                                type="text"
-                                name="fullname"
-                                id="fullname"
-                                placeholder="Rodney Cotton"
-                                class="form--input"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="form--group">
-                        <label for="address">Address</label>
-                        <div class="input__container">
-                            <i class="fas fa-home"></i>
-                            <input
-                                type="text"
-                                name="address"
-                                id="address"
-                                placeholder="Your Address"
-                                class="form--input"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="form--group">
-                        <label for="city">Your city</label>
-                        <div class="input__container">
-                            <i class="fas fa-city"></i>
-                            <input
-                                type="text"
-                                name="city"
-                                id="city"
-                                placeholder="Your city"
-                                class="form--input"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="form--group">
-                        <label for="country">Country</label>
-                        <div class="input__container">
-                            <i class="fas fa-globe-americas"></i>
-                            <select name="country" id="country">
-                                <option value="Your country">
-                                    Your Country
-                                </option>
-                                <option value="india">INDIA</option>
-                                <option value="usa">USA</option>
-                                <option value="uk">U.K.</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form--group">
-                        <label for="postalcode">Postal Code</label>
-                        <div class="input__container">
-                            <i class="far fa-map"></i>
-                            <input
-                                type="text"
-                                name="postalcode"
-                                id="postalcode"
-                                placeholder="Your postal code"
-                                class="form--input"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="save">
-                        <input
-                            type="checkbox"
-                            name="saveforlater"
-                            id="saveforlater"
-                        />
-                        <label for="saveforlater"
-                            >Save this information for next time.</label
-                        >
-                    </div>
-
-                    <div class="form--group">
-                        <button type="submit" class="btn">Continue</button>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </body>
